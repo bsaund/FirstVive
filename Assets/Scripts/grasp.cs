@@ -46,12 +46,13 @@ public class grasp : MonoBehaviour {
         if (dev.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
         {
             Debug.Log("Attempting to grasp object");
-            
+            copyableObj = col.gameObject;
+
             grasped = col.gameObject.GetComponent<Rigidbody>();
             fixedJoint = col.gameObject.AddComponent<FixedJoint>();
             fixedJoint.connectedBody = rigidBodyAttachPoint;
 
-            copyableObj = col.gameObject;
+            
         }
     }
 
