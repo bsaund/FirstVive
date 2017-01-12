@@ -16,7 +16,7 @@ public class grasp : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         dev = SteamVR_Controller.Input((int)controller.index);
-        if (dev.GetPressDown(SteamVR_Controller.ButtonMask.Trigger)
+        if (dev.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
         {
             Debug.Log("Pressing Down");
         }
