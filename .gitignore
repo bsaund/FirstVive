@@ -2,3 +2,6 @@ SteamVR*
 ProjectSettings
 Temp
 Library
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+obj
