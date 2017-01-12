@@ -4,6 +4,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(SteamVR_TrackedObject))]
 public class grasp : MonoBehaviour {
+    public Rigidbody rigidBodyAttachPoint;
+
     GameObject copyableObj;
 
     SteamVR_TrackedObject controller;
@@ -47,7 +49,7 @@ public class grasp : MonoBehaviour {
             
             grasped = col.gameObject.GetComponent<Rigidbody>();
             fixedJoint = col.gameObject.AddComponent<FixedJoint>();
-            fixedJoint.connectedBody = this.gameObject.GetComponent<Rigidbody>();
+            fixedJoint.connectedBody = rigidBodyAttachPoint;
 
             copyableObj = col.gameObject;
         }
