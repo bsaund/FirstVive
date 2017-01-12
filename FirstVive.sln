@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstVive", "FirstVive.csproj", "{60E757FD-6986-C31B-D6F7-E3CE1425F623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstVive.Editor", "FirstVive.Editor.csproj", "{A0459225-AFF7-C430-4E1B-49194ACE858F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60E757FD-6986-C31B-D6F7-E3CE1425F623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E757FD-6986-C31B-D6F7-E3CE1425F623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E757FD-6986-C31B-D6F7-E3CE1425F623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E757FD-6986-C31B-D6F7-E3CE1425F623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0459225-AFF7-C430-4E1B-49194ACE858F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0459225-AFF7-C430-4E1B-49194ACE858F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0459225-AFF7-C430-4E1B-49194ACE858F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0459225-AFF7-C430-4E1B-49194ACE858F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
