@@ -36,12 +36,17 @@ public class grasp : MonoBehaviour {
         {
             Debug.Log("Dropping everything");
             Object.Destroy(fixedJoint);
+            fixedJoint = null;
+            toss(grasped);
         }
 
     }
 
     void OnTriggerStay(Collider col)
     {
+        if (dev == null)
+            return;
+
         Debug.Log("Collided with " + col.name + " and activated OnTriggerStay");
         if (dev.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
         {
@@ -54,6 +59,16 @@ public class grasp : MonoBehaviour {
 
             
         }
+    }
+
+    void toss(Rigidbody bod)
+    {
+        //Transform origin = controller.origin;
+        //bod.velocity = origin.TransformVector(rigidBodyAttachPoint.velocity);
+        //bod.angularVelocity = origin.TransformVector(rigidBodyAttachPoint.angularVelocity);
+        bod.velocity = dev.velocity;
+        bod.angularVelocity = dev.velocity;
+        
     }
 
 }
