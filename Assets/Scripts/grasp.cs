@@ -28,7 +28,7 @@ public class grasp : MonoBehaviour {
             if(copyableObj != null)
             {
                 //Instantiate(copyableObj, null);
-                Instantiate(copyableObj, new Vector3(0, 3, 0), Quaternion.identity);
+                //Instantiate(copyableObj, new Vector3(0, 3, 0), Quaternion.identity);
             }     
         }
 

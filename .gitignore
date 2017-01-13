@@ -5,3 +5,6 @@ Library
 Assembly-CSharp-Editor.csproj
 Assembly-CSharp.csproj
 obj
+FirstVive.csproj
+FirstVive.Editor.csproj
+.vs
