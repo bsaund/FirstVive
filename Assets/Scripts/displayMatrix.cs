@@ -5,8 +5,8 @@ using UnityEngine;
 public class displayMatrix : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
-		
+	void Awake () {
+        GameObject.CreatePrimitive(PrimitiveType.Cube);
 	}
 	
 	// Update is called once per frame
